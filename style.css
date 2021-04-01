@@ -1,0 +1,87 @@
+
+body{
+    background-image: url(https://lh3.googleusercontent.com/jX5yN2VxEnqXl2SzCz24QftP796cpppY1cxCAI0o_NjZYDnrIW2GM9XspN9YJM26roqtqg3o4c4EkY5jM9SNNrpBmOnvRKPoOMSrN-SuNNUlJhAyQ1i98FZpwKqVxIR-Z7dtWHEsQFhQV-8FUicjkhptBM1-7o2MW-AQ4N0KhTcIIVRL_AT5oyRZENRnXMpyJ8pr-pSLrj92ZqOk5dw_0trqdl6e5BVtQev0uoWzMRt0MAiKbSZ4ZkNV3vPm9wVG7v1eBqzUoA_yWegnyHZsSWUdvBLkiocfxAZtUB-g80iH_48CHWEuRsauXeGFAD0cokXCryWEle6Keg8SNq9Bd49c9d2tLBvA5kZcyh2nXnl1iru-vB_T20pdR-63kIzLZzk4_PcOimGHkaCHMZ1_KnZY65d9pfoV4Q0pcYygI0kQgc0CLc8UBB82pbXj4FzLFOzsJN0CizmPYkgCtkzQXWHlngXZwMmW9Cbnsr6UJE98zUi3OefbdDhjCm_3DClzULZgzJg1PrwotAoN36QgdPbdTZ3dLfqeyzehtTmPVmMU-DbH1j7wyroP4U1yC1On4cSXPHRUY8-W2HpPX3l5HVINoYuqHlAEFUemExVaKpEqtK1yt0Iua4PutRr-Ff1GcbdOzqCPGsQuUAZFurCVtSfzwhSjvcQtlt03Wnetk_IwplwG1MBxiD6JBwKX6enCoy171X2MkeLeK_5LKOx5Ranb=w428-h637-no?authuser=1)  ;
+    background: cover;/*making the background picture cover the entire page*/
+    text-align: center; 
+    overflow: scroll;  /*allows you to scroll through the boarder*/
+    }
+*{
+    margin:0;
+    padding: 0;/*inner most portion of items in the margin*/
+    color:white;   /* styling the margin of the page */
+    box-sizing: border-box;/* specifies behavior of the width and height of properties*/
+    font-family:fantasy;
+}
+nav{
+    background: none;
+    padding: 10px 40px 10px 70px;
+    border: 1px greenyellow;
+    border-left:none;
+    border-right: none;
+}
+/*flex CSS sets how a flex item will grow or shrink to fit the space available in its flex container*/
+nav ul{
+    display:flex;
+    list-style:none;
+    flex-wrap: wrap;
+    align-items: stretch;/*inside the ul tag*/
+    justify-content: center;
+}
+nav ul li.logo{
+    flex: 1;
+    font-size: 30px;/*inside the logo*/
+    font-weight: 700;
+    margin-left:0px;
+    position:absolute;
+        top: 8px;
+        left:16px;
+        font-size: 30px;
+}
+nav ul div.items{
+    padding: 0 25px;/* the inner most portion of the items in the div class*/
+    display: inline-flex;/*The inner display type is flex , so items directly inside the container are in flex layout*/
+}
+nav ul div.items a{
+    text-decoration: none;
+    font-size: 18px;/* the font size of the different items in the a section*/
+    padding: 0 12px;
+
+}
+nav ul div.items a:hover{/*used to select items when you mouse over them */
+    color:whitesmoke;
+    background:black;
+}
+nav ul.search-icon{
+    height: 40px;
+    width: 240px;
+    display:flex;
+    background: gray;
+    border-radius: 5px;
+}
+nav ul.search-icon input{
+    height: 100%;
+    width:200%;
+    border:none; /* inside the search icon*/
+    outline: none;
+    padding: 0 10px;
+    color :#000;
+    border-radius:5px 0 0 5px ;/*this defines the radius of the search icon input */
+}
+nav ul.search-icon .icon{
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align:center;
+    background:yellowgreen;
+    border: 1px solid gray;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+nav ul.search-icon span{ /* styling the inside of the search icon*/
+    color: darkolivegreen;
+    font-size: 18px;
+}
+h1{
+    font-size: 50px;
+}
